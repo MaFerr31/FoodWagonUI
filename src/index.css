@@ -1,0 +1,155 @@
+@import "@fontsource/source-sans-pro";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/**Header Section**/
+
+.header{
+  width: 100%;
+  height: 8svh;
+  background-color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Somente abaixo */
+}
+
+.header-img{
+  width: 250px;
+}
+
+.header-local{
+  display: flex;
+  align-items: center;
+}
+
+.header-map{
+  padding: 5px;
+  font-weight: bold;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap:25px;
+  font-size: 16px;
+}
+
+.header-user {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: linear-gradient(to right, rgb(255, 184, 0), #FF8A00);
+  padding: 10px 21px;
+  border-radius: 12px;
+  gap:10px;
+  box-shadow: 0 4px 8px 0 rgba(131, 94, 2, 0.596), 0 6px 20px 0 rgba(177, 128, 4, 0.19);
+  background: linear-gradient(to right, rgb(255, 184, 0), #FF8A00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+
+}
+
+.header-user:hover {
+  background: rgb(255, 184, 0);
+  -webkit-background-clip: border-box; 
+  -webkit-text-fill-color: white; 
+  color: white;
+  box-shadow: 0 6px 12px 0 rgba(131, 94, 2, 0.7), 0 8px 24px 0 rgba(177, 128, 4, 0.25);
+}
+
+.header-user:hover img {
+  filter: brightness(0) invert(1); /* Torna a imagem branca */
+}
+
+.header-search{
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  gap:10px;
+  font-size: 16px;
+}
+
+/**Main Section**/
+
+.main{
+  width: 100%;
+  height: 82svh;
+  padding: 0 150px;
+  position: relative;
+  background: linear-gradient(to right, rgb(255, 184, 0), #FF8A00);
+}
+
+.main-img{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+  padding: 0 150px;
+}
+
+.main-img img{
+  filter: contrast(0.85) saturate(1.2) brightness(1.2);
+}
+
+.main-content {
+  display: flex;
+  align-items: center; 
+  justify-content: flex-start;
+}
+
+/*Find Address*/
+.title-address{
+  font-size: 72px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.container-address{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding: 5px 56px ;
+    bottom: 40%;
+    width: 856px; 
+    height: 355px;  
+    background-color: transparent;  
+    border-radius: 8px; 
+    justify-content: center;
+    align-items: left;
+    color: rgb(0, 0, 0);  /* Cor do texto */
+    font-weight: bold;
+}
+
+.address-sloggan{
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight:200;
+}
+
+.square-box-address{
+  width: 856px;
+  height: 194px;
+  margin: 20px 0;
+  background-color: white;
+  border-radius: 20px;
+}
